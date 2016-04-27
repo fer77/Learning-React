@@ -14,7 +14,7 @@ class App extends Component {
         this.state = { videos: [] };
         
         YTSearch({key: API_KEY, term: 'surfboards'}, (videos) => {
-            this.setState({ videos }); //when key and value are identical (the same name) condense like this: {name of variable}.
+            this.setState({ videos }); //when key and value are identical (the same name) condense entry like this: {name of variable}.
     });
 }
     

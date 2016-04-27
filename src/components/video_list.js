@@ -4,7 +4,7 @@ import VideoListItem from './video_list_item';
 const VideoList = (props) => {
     //we'll need to loop over the array we get from API. Try not use a 'for' loop, instead use a built in iterator like '.map'
     const videoItems = props.videos.map((video) => { 
-        return <VideoListItem video={video} />
+        return <VideoListItem key={video.etag} video={video} />
     });
     
     return (
