@@ -13,8 +13,9 @@ class SearchBar extends Component { //this gives SearchBar functionality from Re
     }
     
     render() { // Every React 'class' component must have a 'render method'.
+              // Try to name your top level elements after your components i.e. SearchBar search-bar
         return (
-        <div>
+        <div className="search-bar">
             <input //Becomes a controlled component by using value...
                 value={this.state.term}
                 onChange={ event => this.setState({ term: event.target.value }) } />

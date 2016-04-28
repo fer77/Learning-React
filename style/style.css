@@ -1,0 +1,30 @@
+/* === Search bar === */
+.search-bar {
+    margin: 20px;
+    text-align: center;
+}
+
+.search-bar input {
+    width: 75%;
+}
+
+/* === Right hand side thumbnail === */
+.video-item img {
+    max-width: 64px;
+}
+
+/* === Individual details (right hand panel) === */
+.video-detail .details {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px; solid #ddd;
+    border-radius: 4px;
+}
+
+.list-group-item {
+    cursor: pointer;
+}
+
+.list-group-item:hover {
+    background-color: #eee;
+}
