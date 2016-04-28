@@ -18,10 +18,16 @@ class SearchBar extends Component { //this gives SearchBar functionality from Re
         <div className="search-bar">
             <input //Becomes a controlled component by using value...
                 value={this.state.term}
-                onChange={ event => this.setState({ term: event.target.value }) } />
+                onChange={ event => this.onInputChange(event.target.value) } />
         </div>
         );
     }
+    
+    onInputChange(term) {
+        this.setState({term});
+        this.props.onSearchTermChange(term);
+    }
+    
 }
 
 export default SearchBar; //export so we can access this module in our index.
